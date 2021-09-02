@@ -11,4 +11,4 @@ ___
 - HTML/CSS
 - Java
 
-![Sunflower](.\Sunflower.jpg)
+![Sunflower](.\assets\Sunflower.jpg)
