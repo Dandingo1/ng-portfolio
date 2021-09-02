@@ -11,4 +11,4 @@ ___
 - HTML/CSS
 - Java
 
-![Sunflower](.\assets\Sunflower.jpg)
+![Sunflower](https://user-images.githubusercontent.com/17580571/131791051-6da90846-bcb2-49f4-a525-72704df1ca2a.jpg)
