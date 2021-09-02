@@ -4,7 +4,7 @@ This project is to upgrade my portfolio using Angular and possibly display some 
 
 ___
 
-### **Technologies** :
+## Technologies
 
 - Angular
 - Javascript
