@@ -28,3 +28,7 @@ a:hover {
 .active-link {
 	font-weight: bold;
 }
+
+i:hover {
+	color: gray;
+}

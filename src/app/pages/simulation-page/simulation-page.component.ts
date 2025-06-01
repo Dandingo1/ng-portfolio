@@ -12,10 +12,9 @@ import { randFloat } from 'three/src/math/MathUtils.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 @Component({
-    selector: 'app-simulation-page',
-    imports: [],
-    templateUrl: './simulation-page.component.html',
-    styleUrl: './simulation-page.component.css'
+	selector: 'app-simulation-page',
+	templateUrl: './simulation-page.component.html',
+	styleUrl: './simulation-page.component.css',
 })
 export class SimulationPageComponent {
 	scene = new THREE.Scene();
@@ -90,12 +89,18 @@ export class SimulationPageComponent {
 		// Moon
 		const moonMesh = this.addSphereToScene(
 			new THREE.SphereGeometry(1, 8, 8),
-			new THREE.MeshPhongMaterial({ color: '#888888', emissive: '#222222' }),
+			new THREE.MeshPhongMaterial({
+				color: '#888888',
+				emissive: '#222222',
+			}),
 			0.5
 		);
 		moonOrbit.add(moonMesh);
 
-		const controls = new OrbitControls(this.camera, this.renderer.domElement);
+		const controls = new OrbitControls(
+			this.camera,
+			this.renderer.domElement
+		);
 		controls.target.set(0, 5, 0);
 		controls.update();
 
@@ -179,7 +184,11 @@ export class SimulationPageComponent {
 		this.renderer.setAnimationLoop(() => this.animate(toruses));
 	}
 
-	addSphereToScene(sphereGeometry: any, sunMaterial: any, scale: number): any {
+	addSphereToScene(
+		sphereGeometry: any,
+		sunMaterial: any,
+		scale: number
+	): any {
 		const sphereMesh = new THREE.Mesh(sphereGeometry, sunMaterial);
 		sphereMesh.scale.set(scale, scale, scale);
 		// this.scene.add(sphereMesh);
