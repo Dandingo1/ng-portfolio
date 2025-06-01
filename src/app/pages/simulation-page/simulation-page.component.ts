@@ -12,11 +12,10 @@ import { randFloat } from 'three/src/math/MathUtils.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 @Component({
-	selector: 'app-simulation-page',
-	standalone: true,
-	imports: [],
-	templateUrl: './simulation-page.component.html',
-	styleUrl: './simulation-page.component.css',
+    selector: 'app-simulation-page',
+    imports: [],
+    templateUrl: './simulation-page.component.html',
+    styleUrl: './simulation-page.component.css'
 })
 export class SimulationPageComponent {
 	scene = new THREE.Scene();
