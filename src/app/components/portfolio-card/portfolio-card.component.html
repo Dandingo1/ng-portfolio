@@ -1,0 +1,19 @@
+<section>
+	<header>
+		<div>
+			<h2>{{ experience.title }}</h2>
+			<p>{{ experience.dateRange }}</p>
+		</div>
+		<div>
+			<p>{{ experience.company }}</p>
+			<p>{{ experience.location }}</p>
+		</div>
+	</header>
+	<main>
+		<ul>
+			@for (description of experience.description; track description) {
+				<li>{{ description }}</li>
+			}
+		</ul>
+	</main>
+</section>

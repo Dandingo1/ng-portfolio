@@ -1,4 +1,6 @@
-<section></section>
+@for (exp of experienceArray; track exp.title) {
+	<app-portfolio-card [experience]="exp" />
+}
 
 <!-- <p>
     Software Engineer 08/2022-11/2024
