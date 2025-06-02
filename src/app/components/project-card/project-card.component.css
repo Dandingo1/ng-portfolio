@@ -11,3 +11,8 @@ section {
 h1 {
 	font-weight: 500;
 }
+
+.image-container {
+	width: 275px;
+	height: 125px;
+}

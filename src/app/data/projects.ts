@@ -12,7 +12,7 @@ export const projects = [
 		description:
 			'Created an Angular-based drag-and-drop task management board.' +
 			'\nUsed Firestore to sync data in real time, deployed app to Firebase Hosting.',
-		image: '/Users/User1/Projects/Portfolio/ng-portfolio/src/app/assets/kanban-fire.png',
+		image: '/kanban-fire.png',
 		url: 'https://kanbanfire-ffcad.firebaseapp.com',
 		skills: [
 			'Angular',

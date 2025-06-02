@@ -12,5 +12,4 @@ export const routes: Routes = [
 	{ path: 'about', component: HomePageComponent },
 	{ path: 'experience', component: ExperiencePageComponent },
 	{ path: 'projects', component: ProjectsPageComponent },
-	{ path: 'resume', redirectTo: 'src/app/assets/GOV_Software_Engineer.pdf' },
 ];
