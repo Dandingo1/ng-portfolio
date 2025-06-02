@@ -1,0 +1,9 @@
+.job-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+h1 {
+	font-weight: 500;
+}

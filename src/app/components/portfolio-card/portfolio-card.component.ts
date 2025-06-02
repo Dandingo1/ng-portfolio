@@ -1,17 +1,11 @@
 import { Component, Input } from '@angular/core';
-
-export interface JobExperience {
-	title: string;
-	dateRange: string;
-	company: string;
-	location: string;
-	description: string[];
-}
+import { JobExperience } from '../../data/job-experience';
+import { SkillTagComponent } from '../skill-tag/skill-tag.component';
 
 @Component({
 	selector: 'app-portfolio-card',
 	standalone: true,
-	imports: [],
+	imports: [SkillTagComponent],
 	templateUrl: './portfolio-card.component.html',
 	styleUrl: './portfolio-card.component.css',
 })
@@ -22,5 +16,6 @@ export class PortfolioCardComponent {
 		company: '',
 		location: '',
 		description: [],
+		skills: [],
 	};
 }

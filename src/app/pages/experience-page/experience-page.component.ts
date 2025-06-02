@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import {
-	JobExperience,
-	PortfolioCardComponent,
-} from '../../components/portfolio-card/portfolio-card.component';
+import { PortfolioCardComponent } from '../../components/portfolio-card/portfolio-card.component';
+import { JobExperience, jobExperiences } from '../../data/job-experience';
 
 @Component({
 	selector: 'app-experience-page',
@@ -12,5 +10,5 @@ import {
 	styleUrl: './experience-page.component.css',
 })
 export class ExperiencePageComponent {
-	experienceArray: JobExperience[] = [];
+	experienceArray: JobExperience[] = jobExperiences;
 }

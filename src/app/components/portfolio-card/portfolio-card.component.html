@@ -1,19 +1,26 @@
-<section>
-	<header>
-		<div>
-			<h2>{{ experience.title }}</h2>
-			<p>{{ experience.dateRange }}</p>
+<section class="rounded shadow p-3">
+	<header class="d-flex flex-column mb-2">
+		<div class="job-header">
+			<h1 class="fs-5">{{ experience.title }}</h1>
+			<p class="lh-base">{{ experience.dateRange }}</p>
 		</div>
-		<div>
+		<div class="job-header">
 			<p>{{ experience.company }}</p>
 			<p>{{ experience.location }}</p>
 		</div>
 	</header>
-	<main>
-		<ul>
+	<main class="mb-2">
+		<ul class="lh-sm">
 			@for (description of experience.description; track description) {
-				<li>{{ description }}</li>
+				<li>- {{ description }}</li>
 			}
 		</ul>
 	</main>
+	<footer class="d-flex flex-row">
+		@for (skill of experience.skills; track skill) {
+			<div class="me-2">
+				<app-skill-tag [skill]="skill" />
+			</div>
+		}
+	</footer>
 </section>
