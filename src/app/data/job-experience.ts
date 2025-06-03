@@ -23,7 +23,16 @@ export const jobExperiences: JobExperience[] = [
 			'Practiced Test-Driven Development (TDD) using Jest for unit tests and Cypress for end-to-end coverage of user flows (80%+ line coverage).',
 			'Participated in sprint ceremonies, estimated effort via story points, and collaborated cross-functionally with designers and backend developers in Agile teams.',
 		],
-		skills: ['Typescript', 'HTML', 'CSS', 'Angular', 'NgRx'],
+		skills: [
+			'Typescript',
+			'HTML',
+			'CSS',
+			'Angular',
+			'NgRx',
+			'RxJs',
+			'AWS',
+			'Java',
+		],
 	},
 	{
 		// Focus on PX-Cloud
@@ -40,7 +49,16 @@ export const jobExperiences: JobExperience[] = [
 			"Followed front-end security best practices including input sanitization, and Angular's built-in protections.",
 			'Employed Git and GitHub for version control and participated in code reviews and continuous integration practices.',
 		],
-		skills: ['Typescript', 'HTML', 'CSS', 'Angular', 'NgRx'],
+		skills: [
+			'Typescript',
+			'HTML',
+			'CSS',
+			'Angular',
+			'NgRx',
+			'RxJs',
+			'AWS',
+			'Java',
+		],
 	},
 	{
 		title: 'Software Engineer Intern',
@@ -52,6 +70,6 @@ export const jobExperiences: JobExperience[] = [
 				'responsive practices. Worked closely with designers and engineers in daily scrums to implement new ' +
 				'features and refine designs.',
 		],
-		skills: [],
+		skills: ['Typescript', 'HTML', 'CSS', 'Angular', 'SQL', 'Java'],
 	},
 ];
