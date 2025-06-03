@@ -28,12 +28,7 @@
 							"@angular/material/prebuilt-themes/cyan-orange.css",
 							"src/styles.scss"
 						],
-						"scripts": [],
-						"server": "src/main.server.ts",
-						"prerender": true,
-						"ssr": {
-							"entry": "server.ts"
-						}
+						"scripts": []
 					},
 					"configurations": {
 						"production": {
@@ -91,10 +86,10 @@
 						],
 						"scripts": []
 					}
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
-        }
+				},
+				"deploy": {
+					"builder": "angular-cli-ghpages:deploy"
+				}
 			}
 		}
 	},
