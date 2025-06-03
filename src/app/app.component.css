@@ -2,16 +2,35 @@ header {
 	background: var(--mat-sys-primary);
 }
 
-/* @media screen and (max-width: 650px) {
-	.content {
-		flex-direction: column;
-		width: max-content;
+@media screen and (min-width: 800px) {
+	main {
+		flex-direction: row;
 	}
 
-	.divider {
-		height: 1px;
-		width: 100%;
-		background: var(--red-to-pink-to-purple-horizontal-gradient);
-		margin-block: 1.5rem;
+	#welcome-section {
+		width: 50%;
+		margin-right: 2rem;
+		padding: 3rem;
 	}
-} */
+
+	#page-section {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		flex-direction: column;
+	}
+
+	#welcome-section {
+		width: 100%;
+		justify-items: center;
+		text-align: center;
+		padding: 3rem 3rem 0 3rem;
+	}
+
+	#page-section {
+		width: 100%;
+	}
+}

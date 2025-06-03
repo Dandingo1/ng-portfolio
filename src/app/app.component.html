@@ -2,12 +2,12 @@
 <header class="w-100">
 	<nav-bar />
 </header>
-<main class="w-100 d-flex flex-row">
-	<section class="w-50">
-		<main class="p-5 h-100 d-flex flex-column">
+<main class="w-100 d-flex">
+	<section id="welcome-section">
+		<main class="h-100 d-flex flex-column">
 			<section
 				id="about-section"
-				class="me-5 rounded position-sticky top-0"
+				class="rounded position-sticky top-0"
 			>
 				<h1 class="fs-1 mb-2">Daniel Dominguez</h1>
 				<h2 class="fs-5">Software Engineer</h2>
@@ -16,7 +16,10 @@
 			</section>
 		</main>
 	</section>
-	<section class="p-5 w-50 d-flex flex-column">
+	<section
+		id="page-section"
+		class="p-5 d-flex flex-column"
+	>
 		<router-outlet />
 	</section>
 </main>

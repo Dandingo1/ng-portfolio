@@ -2,3 +2,13 @@ a {
 	margin-right: 2rem;
 	color: var(--mat-sys-secondary);
 }
+
+a:last-child {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		justify-content: center;
+	}
+}
