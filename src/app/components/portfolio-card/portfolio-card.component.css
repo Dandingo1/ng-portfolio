@@ -1,13 +1,7 @@
-section {
-	background-color: #eeeeee;
+.icon-color {
+	color: var(--mat-sys-primary) !important;
 }
 
-.job-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-h1 {
-	font-weight: 500;
+.pre-wrap {
+	white-space: pre-wrap;
 }

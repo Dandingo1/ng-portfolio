@@ -1,3 +1,4 @@
-i:hover {
-	color: gray;
+a {
+	margin-right: 2rem;
+	color: var(--mat-sys-secondary);
 }

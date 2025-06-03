@@ -1,38 +1,5 @@
-:host {
-	--gatorade-yellow: oklch(85.29% 0.271 131.82);
-	--neon-blue: oklch(85.29% 0.192 190.06);
-	--mcragge-blue: #004e86;
-
-	--base-padding: 16px;
-
-	font-family:
-		"Inter",
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		"Apple Color Emoji",
-		"Segoe UI Emoji",
-		"Segoe UI Symbol";
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.top-40 {
-	top: 40% !important;
-}
-
-.rounded-5 {
-	border-radius: 0.5rem;
-}
-
-nav {
-	background-color: #eeeeee;
-	background-image: linear-gradient(to right, white, #eeeeee);
+header {
+	background: var(--mat-sys-primary);
 }
 
 /* @media screen and (max-width: 650px) {

@@ -1,32 +1,31 @@
-<section class="rounded shadow p-3 d-flex flex-row">
-	<aside class="me-3 align-self-center d-flex image-container">
-		<img
-			[alt]="project.title"
-			width="275"
-			height="133"
-			[src]="project.image"
-		/>
-	</aside>
-	<main class="d-flex flex-column flex-wrap">
-		<header class="d-flex flex-column mb-2">
-			<div class="d-flex flex-row">
-				<h1 class="fs-5 me-2">{{ project.title }}</h1>
-				<a
-					[href]="project.url"
-					target="_blank"
-				>
-					<i class="bi bi-box-arrow-up-right fs-5"></i>
-				</a>
-			</div>
-		</header>
-
-		<p class="mb-2">{{ project.description }}</p>
-		<footer class="d-flex flex-row flex-wrap">
-			@for (skill of project.skills; track skill) {
-				<div class="me-2">
-					<app-skill-tag [skill]="skill" />
-				</div>
-			}
-		</footer>
-	</main>
-</section>
+<mat-card appearance="outlined">
+	<mat-card-header>
+		<mat-card-title>
+			{{ project.title }}
+		</mat-card-title>
+	</mat-card-header>
+	<img
+		mat-card-image
+		[src]="project.image"
+		[alt]="project.title"
+		class="m-3"
+	/>
+	<mat-card-content class="mb-3">
+		<p>{{ project.description }}</p>
+	</mat-card-content>
+	<mat-card-footer class="ms-3">
+		@for (skill of project.skills; track $index) {
+			<mat-chip class="me-2">{{ skill }}</mat-chip>
+		}
+	</mat-card-footer>
+	<mat-card-actions>
+		<a
+			mat-button
+			class="fs-5"
+			[href]="project.url"
+			target="_blank"
+		>
+			Checkout Repository <i class="bi bi-box-arrow-up-right fs-5"></i>
+		</a>
+	</mat-card-actions>
+</mat-card>

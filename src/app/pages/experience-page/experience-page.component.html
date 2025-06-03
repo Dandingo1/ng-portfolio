@@ -1,7 +1,7 @@
-<main class="h-50 w-100 mt-5 mb-5">
-	@for (exp of experienceArray; track exp.dateRange) {
-		<section class="mb-4">
-			<app-portfolio-card [experience]="exp" />
+<main class="h-50 w-100">
+	@for (experience of experienceArray; track $index) {
+		<section>
+			<app-portfolio-card [experience]="experience" />
 		</section>
 	}
 </main>

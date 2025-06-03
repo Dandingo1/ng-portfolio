@@ -1,18 +1,7 @@
-li {
-	padding: calc(var(--base-padding) * 0.5);
-	text-align: start;
-	margin: 0.25rem;
+nav {
+	background: var(--mat-sys-inverse-primary);
 }
 
 a {
-	text-decoration: none;
-	color: black;
-}
-
-a:hover {
-	color: gray;
-}
-
-.active-link {
-	font-weight: bold;
+	padding: 1rem;
 }

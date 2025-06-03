@@ -1,39 +1,30 @@
-<nav class="p-2">
-	<ul class="d-flex flex-column">
-		<li>
-			<a
-				routerLink="/about"
-				routerLinkActive="active-link"
-			>
-				About</a
-			>
-		</li>
-		<li>
-			<a
-				routerLink="/experience"
-				routerLinkActive="active-link"
-			>
-				Experience</a
-			>
-		</li>
-		<li>
-			<a
-				routerLink="/projects"
-				routerLinkActive="active-link"
-			>
-				Projects</a
-			>
-		</li>
-		<li>
-			<a
-				href="/GOV_Software_Engineer.pdf"
-				target="_blank"
-			>
-				Resume</a
-			>
-		</li>
-	</ul>
+<nav class="p-2 d-flex justify-content-end">
+	<a
+		mat-button
+		routerLink="/about"
+		routerLinkActive="active-link"
+	>
+		About</a
+	>
+	<a
+		mat-button
+		routerLink="/experience"
+		routerLinkActive="active-link"
+	>
+		Experience</a
+	>
+	<a
+		mat-button
+		routerLink="/projects"
+		routerLinkActive="active-link"
+	>
+		Projects</a
+	>
+	<a
+		mat-raised-button
+		href="/GOV_Software_Engineer.pdf"
+		target="_blank"
+	>
+		Resume</a
+	>
 </nav>
-<footer>
-	<app-contact-links />
-</footer>

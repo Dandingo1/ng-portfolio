@@ -1,0 +1,7 @@
+img {
+	border: 1px solid var(--mat-sys-secondary);
+}
+
+p {
+	padding: 1rem;
+}

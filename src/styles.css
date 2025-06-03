@@ -1,13 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+You can add global styles to this file, and also import other style files
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
 :host {
-	--neon-blue: oklch(85.29% 0.192 190.06);
-	--gatorade-yellow: oklch(85.29% 0.271 131.82);
-	--mcragge-blue: oklch(32.21% 0.1011 248.72736276382602);
 	--base-padding: 16px;
 }
 
@@ -98,6 +95,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/* color: var(--mat-sys-on-surface); */
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -136,7 +134,11 @@ table {
 	border-spacing: 0;
 }
 
+html,
 body {
-	width: 100vw;
-	height: 100vh;
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 }

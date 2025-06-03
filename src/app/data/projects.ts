@@ -27,8 +27,8 @@ export const projects = [
 		description:
 			'Created responsive UI with React and TailwindCSS and developed RESTful backend services' +
 			'\nusing C#. Used Vite for fast frontend tooling and integrated GitHub Actions for CI/CD deployment.',
-		image: '',
-		url: '',
+		image: 'application-tracker.png',
+		url: 'https://github.com/Dandingo1/application-reporter',
 		skills: ['React', 'C#', 'Vite', 'TailwindCSS'],
 	},
 ];

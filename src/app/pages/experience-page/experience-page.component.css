@@ -1,0 +1,7 @@
+section {
+	margin-bottom: 2rem;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}

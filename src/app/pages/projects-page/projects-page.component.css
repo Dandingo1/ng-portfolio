@@ -1,0 +1,7 @@
+div {
+	margin-bottom: 1rem;
+}
+
+div:last-child {
+	margin-bottom: 0;
+}
