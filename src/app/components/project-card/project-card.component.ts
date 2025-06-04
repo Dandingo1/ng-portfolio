@@ -21,11 +21,11 @@ export class ProjectCardComponent implements OnInit {
 		skills: [],
 	};
 
-	anchorText: TextType = 'Repository';
+	anchorText: TextType = 'Application';
 
 	ngOnInit(): void {
 		if (this.project.url.includes('github')) {
-			this.anchorText = 'Application';
+			this.anchorText = 'Repository';
 		}
 	}
 }
