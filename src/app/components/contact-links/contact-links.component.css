@@ -1,3 +1,15 @@
+@media screen and (max-width: 800px) {
+	#contact-link-container {
+		justify-content: center;
+		margin-top: 0.5rem;
+	}
+}
+
+#contact-link-container {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
 a {
 	margin-right: 2rem;
 	color: var(--mat-sys-secondary);
@@ -5,10 +17,4 @@ a {
 
 a:last-child {
 	margin-right: 0;
-}
-
-@media screen and (max-width: 800px) {
-	main {
-		justify-content: center;
-	}
 }
