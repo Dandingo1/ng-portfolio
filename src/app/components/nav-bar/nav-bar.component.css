@@ -1,7 +1,16 @@
-nav {
+mat-nav-list {
 	background: var(--mat-sys-inverse-primary);
+	padding: 0.5rem;
+	display: flex;
+	justify-content: end;
 }
 
 a {
 	padding: 1rem;
+	display: flex;
+	width: fit-content;
+}
+
+#resume {
+	background-color: var(--mat-sys-surface);
 }
