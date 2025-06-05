@@ -6,7 +6,7 @@ export interface Project {
 	skills: string[];
 }
 
-export const projects = [
+export const projects: Project[] = [
 	{
 		title: 'Kanban Manager',
 		description:
@@ -30,5 +30,21 @@ export const projects = [
 		image: 'application-tracker.png',
 		url: 'https://github.com/Dandingo1/application-reporter',
 		skills: ['React', 'C#', 'Vite', 'TailwindCSS'],
+	},
+	{
+		title: 'Portfolio',
+		description:
+			'Developed a single-page application (SPA) using Angular, deployed on Firebase, to showcase recent projects and professional experience.' +
+			'\nRegistered a custom domain via Cloudflare and implemented SEO best practices to improve search visibility and site performance.',
+		image: '/ng-portfolio.png',
+		url: 'https://github.com/Dandingo1/ng-portfolio',
+		skills: [
+			'Angular',
+			'Material',
+			'Bootstrap',
+			'Github Actions',
+			'Firebase Hosting',
+			'Cloudflare DNS',
+		],
 	},
 ];
