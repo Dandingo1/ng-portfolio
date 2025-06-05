@@ -3,11 +3,17 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ContactLinksComponent } from './components/contact-links/contact-links.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
-	imports: [RouterOutlet, NavBarComponent, ContactLinksComponent],
+	imports: [
+		RouterOutlet,
+		NavBarComponent,
+		NgOptimizedImage,
+		ContactLinksComponent,
+	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.css',
 })

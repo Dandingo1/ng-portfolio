@@ -2,13 +2,15 @@
 	id="about-section"
 	class="h-100 d-flex flex-column align-items-center"
 >
-	<img
-		class="rounded-circle p-1 mb-3"
-		src="/Linkedin.jpg"
-		width="200px"
-		height="auto"
-		alt="Profile_Headshot"
-	/>
+	<div class="image-container">
+		<img
+			class="rounded-circle p-1 mb-3"
+			ngSrc="/Linkedin.jpg"
+			fill
+			alt="Profile_Headshot"
+			priority
+		/>
+	</div>
 	<p class="lh-lg">
 		A <b class="fw-bold">Software Engineer</b> with 3+ years of experience
 		designing and implementing scalable, accessible, and responsive user
