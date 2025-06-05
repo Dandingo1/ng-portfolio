@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { JobExperience } from '../../data/job-experience';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
@@ -20,12 +20,12 @@ import { MatIconModule } from '@angular/material/icon';
 	styleUrl: './portfolio-card.component.css',
 })
 export class PortfolioCardComponent {
-	@Input({ required: true }) experience: JobExperience = {
+	experience = input<JobExperience>({
 		title: '',
 		dateRange: '',
 		company: '',
 		location: '',
 		description: [],
 		skills: [],
-	};
+	});
 }
