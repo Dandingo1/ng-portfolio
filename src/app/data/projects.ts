@@ -28,7 +28,7 @@ export const projects: Project[] = [
 			'Created responsive UI with React and TailwindCSS and developed RESTful backend services' +
 			'\nusing C#. Used Vite for fast frontend tooling and integrated GitHub Actions for CI/CD deployment.',
 		image: 'application-tracker.png',
-		url: 'https://github.com/Dandingo1/application-reporter',
+		url: 'https://github.com/danidomi-1/application-reporter',
 		skills: ['React', 'C#', 'Vite', 'TailwindCSS'],
 	},
 	{
@@ -37,7 +37,7 @@ export const projects: Project[] = [
 			'Developed a single-page application (SPA) using Angular, deployed on Firebase, to showcase recent projects and professional experience.' +
 			'\nRegistered a custom domain via Cloudflare and implemented SEO best practices to improve search visibility and site performance.',
 		image: '/ng-portfolio.png',
-		url: 'https://github.com/Dandingo1/ng-portfolio',
+		url: 'https://github.com/danidomi-1/ng-portfolio',
 		skills: [
 			'Angular',
 			'Material',

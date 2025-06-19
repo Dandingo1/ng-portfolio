@@ -6,11 +6,23 @@ import { ExperiencePageComponent } from './pages/experience-page/experience-page
 export const routes: Routes = [
 	{
 		path: '',
-		redirectTo: 'about',
+		redirectTo: '/about',
 		pathMatch: 'full',
 	},
 	{ path: 'about', component: HomePageComponent },
-	{ path: 'experience', component: ExperiencePageComponent },
-	{ path: 'projects', component: ProjectsPageComponent },
-	{ path: '**', redirectTo: 'about', pathMatch: 'full' },
+	{
+		path: 'experience',
+		loadComponent: () =>
+			import('./pages/experience-page/experience-page.component').then(
+				(m) => m.ExperiencePageComponent
+			),
+	},
+	{
+		path: 'projects',
+		loadComponent: () =>
+			import('./pages/projects-page/projects-page.component').then(
+				(m) => m.ProjectsPageComponent
+			),
+	},
+	{ path: '**', redirectTo: 'about' },
 ];
